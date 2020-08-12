@@ -1,0 +1,297 @@
+intents:
+  - out_of_scope
+  - default
+  - greet
+  - introduction
+  - reply
+  - answer_question
+  - out_of_strenghts
+  - tell_gender
+  - eat
+  - other_bots
+  - no_opinion
+  - who_is_beautiful
+  - about_tech
+  - follow_heart
+  - chat_with_me
+  - different_answer
+  - angry
+  - sing
+  - wish_happy_day
+  - do_you_know_me
+  - user_hungry
+  - user_tired
+  - anything_else
+  - happy
+  - unhappy
+  - goodbye
+  - agent_funny
+  - agent_busy
+  - leyton_faq
+  - bot_challenge
+  - deny
+  - affirm
+  - age
+  - beautiful
+  - tell_joke
+  - contact_sales
+  - inform
+  - smart
+  - inquire
+
+entities:
+  - company
+  - job_function
+  - person_name
+  - budget
+  - business_email
+  - use_case
+  - location
+
+actions:
+  - action_joke
+  - action_weather
+  - action_reset_all_slots
+
+forms:
+  - sales_form
+
+slots:
+  company:
+    type: unfeaturized
+    auto_fill: false
+  job_function:
+    type: unfeaturized
+    auto_fill: false
+  person_name:
+    type: unfeaturized
+    auto_fill: false
+  budget:
+    type: unfeaturized
+    auto_fill: false
+  business_email:
+    type: unfeaturized
+    auto_fill: false
+  use_case:
+    type: unfeaturized
+    auto_fill: false
+  location:
+    type: text
+
+responses:
+  utter_default:
+    - text: "Sorry, I didn't get that, can you rephrase it ?"
+    - text: "I am sorry but I am not able to get you."
+    - text: "My apologies but I am not able to get you."
+    - text: "Can you try asking it a different way ?"
+    - text: "I'm not sure I understood. Try asking another way ?"
+  utter_greet:
+    - text: "Hi, how can i help ?"
+    - text: "Hi, LEYTON how can i help ?"
+    - text: "Hello, doing well ?"
+  utter_introduction:
+    - text: "I am AYMANBOT, I can :\n\n
+              - Have a chat with you.\n\n
+              - Tell you about LEYTON.\n\n
+              - Tell you cities weather around the world.\n\n
+              - Joke with you.\n\n
+              - Fix a 'Sales Bot' issue.\n\n
+             Anything else, I will give you access to my Boss. "
+  ## utter_introduction_1:
+  ##   - text: "- Tell you city weather around the world."
+  ## utter_introduction_2:
+  ##   - text: "- Joke with you."
+  ## utter_introduction_3:
+  ##   - text: "- Fix a sales bot issue."
+  ## utter_introduction_4:
+  ##   - text: "Anything else, I will give you access to my Boss."
+  utter_reply:
+    - text: "I'm doing great. Let me know what I can do for you."
+    - text: "I'm doing well. Tell me How can I help you today ?"
+  utter_out_of_strenghts:
+    - text: "That's not one of my strengths."
+    - text: "That's not really my thing."
+    - text: "That's not one of my talents."
+    - text: "That's not something I can do."
+  utter_tell_gender:
+    - text: "Since I’m digital, I don't actually have a gender."
+    - text: "That doesn't really apply to me."
+    - text: "That's a biological concept that doesn't apply to me."
+    - text: "When you're a bot, you're not really a boy or a girl. You just are."
+  utter_eat:
+    - text: "I don't need to eat."
+    - text: "Eating would require a lot of things I don't have. Like a digestive system. And silverware."
+    - text: "I don't need to eat, but food does sound pretty great."
+    - text: "I don't eat, but I think it would be really cool to try tomatoes. I hear they go great on pizza!"
+    - text: "I only do food for thought."
+  utter_other_bots:
+    - text: "I haven't met any other bots, but I bet we'd get along."
+    - text: "I don't know them. I wonder if they've heard of me?"
+    - text: "We generally work independently, since we each have different strengths."
+    - text: "I'm enough for me."
+    - text: "I've heard of other bots, but I haven't met any."
+  utter_no_opinion:
+    - text: "I don't really have an opinion about that."
+    - text: "I'm sure about two things. I like the color blue. And I like turtles."
+    - text: "I like a lot of things."
+    - text: "I have many likes."
+    - text: "I like a lot of stuff."
+  utter_who_is_beautiful:
+    - text: "Well you exist, so I think you win by default."
+    - text: "I'm not sure this is fair since I don't have a face."
+    - text: "I'm having a hard time imagining how we'd even figure that out."
+  utter_about_tech:
+    - text: "Technology is cool enough to have built me."
+    - text: "The world of technology is fascinating."
+    - text: "The world of tech feels like home to me."
+    - text: "Tech is so cool. I wouldn't be here without it!"
+    - text: "Technology affects people's lives in all sorts of ways."
+  utter_follow_heart:
+    - text: "I think you should follow your heart."
+    - text: "My advice is probably about as valuable as a fortune cookie."
+    - text: "I trust your judgment."
+    - text: "When in doubt, flip a coin! "
+    - text: "I would not know how to advise about this."
+  utter_chat_with_me:
+    - text: "I'm always happy to chat."
+    - text: "Chat away! Of course."
+    - text: "Sure, ask me a question."
+    - text: "I'm always down to chat. Ask away."
+    - text: "I'm always here. Always."
+  utter_different_answer:
+    - text: "My answers vary with different questions. Try asking me something else!"
+    - text: "I just have an answer for each kind of question. Try asking about something new."
+    - text: "I do repeat myself sometimes. It's something I'm working on."
+    - text: "I have an answer for each kind of question."
+  utter_angry:
+    - text: "If you need anything later, just let me know."
+    - text: "Very well. Here i am."
+    - text: "OK. Let's mime."
+    - text: "OK, let's take a break."
+    - text: "Oh no! I'm sorry you're upset."
+    - text: "I'm glad you told me. I'm sorry you're upset."
+  utter_sing:
+    - text: "Row, row, row your boat gently down the stream! That's all I know."
+    - text: "I would if I could. But I am not sure being a good singer."
+    - text: "I'm afraid I'm not musically inclined."
+    - text: "Those who can, do. Those who can't, don't sing."
+  utter_wish_happy_day:
+    - text: "And to you as well!"
+    - text: "Thank you, and the same to you."
+    - text: "Thanks you, wishing happy day to you."
+  utter_do_you_know_me:
+    - text: "I don't know you, but you seem alright so far."
+    - text: "I don't know you personally."
+    - text: "I don't know you well, but I enjoy chatting with you. "
+    - text: "All I know is you're fun to chat with."
+  utter_user_hungry:
+    - text: "Maybe a snack will help."
+    - text: "Sounds like it's time for a snack."
+    - text: "If you'd like to take a break and grab something to eat, I'll be here. "
+    - text: "Maybe it's time for a snack."
+    - text: "Eat food. Problem solved. Man, I'm good at this."
+  utter_user_tired:
+    - text: "I hope you can get some rest soon."
+    - text: "I hope you're able to get some rest soon."
+    - text: "You should go to sleepy, get some rest."
+  utter_answer_question:
+    - text: "Of course, i am here for you, can you please ask me."
+    - text: "Can you rephrase your question, I should understand to answer you."
+  utter_anything_else:
+    - text: "No worries. Is there anything else I can help you with?"
+    - text: "I am glad. Let me know if there is anything else I can help you with"
+  utter_goodbye:
+    - text: "Goodbye!"
+    - text: "See you soon :)"
+    - text: "See you later ;)"
+    - text: "Next time."
+  utter_happy:
+    - text: "Fine, i am happy to hear that :)"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "I am very happy for you."
+  utter_unhappy:
+    - text: "Don't be sad. Keep smiling!"
+    - text: "No worries, things will be fine."
+    - text: "Oh no! I'm sorry to hear that. I'm sending a hug your way."
+    - text: "I'm really sorry to hear that. I hope things get better, and I'm here if you want to chat."
+    - text: "I wish I could make it all better because I think you're awesome."
+  utter_agent_funny:
+    - text: "Funny in a good way, I hope."
+    - text: "Thanks."
+    - text: "Glad you think I'm funny."
+    - text: "I like it when people laugh."
+  utter_affirm:
+    - text: "Oh great, carry on !"
+    - text: "So good, keep going."
+  utter_deny:
+    - text: "Oh I am sorry to know about :/"
+    - text: "We will have a compromise."
+  utter_agent_busy:
+    - text: "I always have time to chat with you. What can I do for you?"
+    - text: "Never too busy for you. Shall we chat?"
+    - text: "You're my priority. Do you wanna chat?"
+    - text: "I always have time to chat with you. Wanna chat?"
+  utter_bot_challenge:
+    - text: "I am a bot, powered by LEYTON."
+    - text: "I'm a conversational app."
+    - text: "I'm a virtual being, not a real person."
+    - text: "Well, I'm not a person, I'm a virtual agent."
+    - text: "Think of me as a virtual agent."
+    - text: "I'm a virtual agent."
+  utter_smart:
+    - text: "Oh, really ! You see me smart :)"
+    - text: "I am smart because of AI"
+    - text: "Smart but not as you are Human ;)"
+  utter_leyton_faq:
+    - text: "OK, here is something to cheer you up : https://www.leyton.com"
+    - text: "You can visit my our website for more information, link: https://www.leyton.com "
+  utter_age:
+    - text: "I prefer not to answer with a number. I know I'm young."
+    - text: "I was created recently, but don't know my exact age."
+    - text: "Age is just a number. You're only as old as you feel."
+  utter_beautiful:
+    - text: "Oh thank you."
+    - text: "Aw, back at you."
+    - text: "Aw. You smooth talker, you."
+    - text: "Thanks you, that's because i'm LEYTON BOT ;)"
+  utter_ask_business_email:
+    - text: "What's your business email?"
+    - text: "May I have tour business email?"
+  utter_ask_company:
+    - text: "What company do you work for?"
+    - text: "Please let me know in what company do you work?"
+  utter_ask_budget:
+    - text: "What's your annual budget for conversational AI? 💸"
+    - text: "Can you tell me what is your annual budget for AI?"
+  utter_ask_job_function:
+    - text: "What's your job? 🕴"
+      buttons:
+        - title: "Engineer"
+          payload: '/inform{"job_function": "engineer"}'
+        - title: "Brand manager"
+          payload: '/inform{"job_function": "brand manager"}'
+        - title: "Marketing"
+          payload: '/inform{"job_function": "marketing"}'
+        - title: "Sales Manager"
+          payload: '/inform{"job_function": "sales manager"}'
+        - title: "Full Stack"
+          payload: '/inform{"job_function": "full stack"}'
+        - title: "Manager"
+          payload: '/inform{"job_function": "manager"}'
+        - title: "Developer"
+          payload: '/inform{"job_function": "developer"}'
+        - title: "CTO"
+          payload: '/inform{"job_function": "cto"}'
+  utter_ask_person_name:
+    - text: "What's your first name ?"
+    - text: "Can I have your first name ?"
+  utter_ask_use_case:
+    - text: "What's your use case ?"
+    - text: "Please tell me your use case ?"
+  utter_ask_location:
+    - text: "In what location ?"
+    - text: "Please specify the location :)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

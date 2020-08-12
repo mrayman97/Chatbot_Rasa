@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+  rasa:
+    image: rasa/rasa:latest
+    container_name: cbl_rasa
+    ports:
+      - 5050:5005
+    volumes:
+      - ./:/app
+    command:
+      - run
+      - --enable-api
+      - --endpoints
+      - endpoints.yml
+      - --cors
+      - "*"
+
+  action_server:
+#    image: rasa/rasa-sdk:1.7.0
+    image: rasa/rasa-sdk:1.10.1
+    container_name: cbl_action_server
+    volumes:
+      - ./actions:/app/actions
+
+  web:
+    image: nginx:latest
+    container_name: cbl_web
+    ports:
+      - 5055:80
+    volumes:
+      - ./UI:/usr/share/nginx/html
+
